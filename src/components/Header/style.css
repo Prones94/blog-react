@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.headerMenu > a{
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.headerMenu > a:hover {
+  color: lightgray
+}
