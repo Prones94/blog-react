@@ -1,16 +1,25 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
   padding: 5px 0;
 }
 
-.navbar > ul {
-  margin: 0;
+.navbar>div>form>img {
+  height: 12px;
+  margin-left: .5em;
 }
 
-.navbar > ul > li {
+.navbar>ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar>ul>li {
   list-style: none;
   display: inline-block;
 }
-.navbar > ul > li> a {
+
+.navbar>ul>li>a {
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -18,4 +27,27 @@
   font-weight: 400;
   color: #565673;
   padding: 0 10px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.searchInput {
+  border: 0;
+  width: 0;
+  transition: width 500ms ease-in
+}
+
+.searchInput.active {
+  width: 150px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.icon {
+  cursor: pointer;
 }
