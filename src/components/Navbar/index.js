@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {NavLink} from 'react-router-dom'
 import './style.css'
 
 const Navbar = props => {
@@ -18,10 +19,10 @@ const Navbar = props => {
   return (
     <div className="navbar">
       <ul className="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Posts</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/about-us">About</NavLink></li>
+        <li><NavLink to="/post">Posts</NavLink></li>
+        <li><NavLink to="/contact-us">Contact Us</NavLink></li>
       </ul>
       <div className="search">
         <form className="searchForm" onSubmit={submitSearch}>
